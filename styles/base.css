@@ -11,6 +11,13 @@ header {
     padding: 20px;
 }
 
+img {
+    padding: 5px;
+    width: 40%;
+    display: block;
+    margin: 5px auto;
+}
+
 /* Step 5 Display the navigation links vertically in a single column in the mobile view and horizontally in one row in the larger views.*/
 nav {
     background-color: #70587C;
