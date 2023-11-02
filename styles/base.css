@@ -1,0 +1,62 @@
+body {
+    background-color: #F9F4F5;
+}
+
+header {
+    background-color: #502F4C;
+    color: #C8B8DB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Step 5 Display the navigation links vertically in a single column in the mobile view and horizontally in one row in the larger views.*/
+nav {
+    background-color: #70587C;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    border: 2px solid #502F4C;
+}
+
+/* step 6 The main element has a limited width and is centered on the screen horizontally.*/
+/*Step 7 Layout the main column cards using CSS Grid. */
+main {
+    max-width: 770px;
+    margin: 0 auto;
+}
+
+main h2 {
+    color: #502F4C;
+}
+
+.card {
+    padding: 10px;
+    border: 1px solid #502F4C;
+    color: #502F4C;
+}
+
+/* Step 9 Set the style type of the course links list to none (do not display bullets). */
+.card ul {
+    list-style-type: none;
+}
+
+footer {
+    text-align: center;
+    background-color: #502F4C;
+    color: #C8B8DB;
+}
