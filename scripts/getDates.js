@@ -3,14 +3,19 @@
 function setCopyrightYear() {
     const currentYear = new Date().getFullYear();
     const copyrightElement = document.querySelector('#copyright-year');
-    copyrightElement.textContent = currentYear;
+    if (copyrightElement) {
+        copyrightElement.textContent = currentYear;
+    }
+
 }
 
 // Function to display the last modified date
 function setLastModified() {
-    const lastModified = new Date.parse(document.lastModified);
+    const lastModified = new Date(document.lastModified);
     const lastModifiedElement = document.querySelector('#lastModified');
-    lastModified.textContent = lastModified.toDateString();
+    if (lastModifiedElement) {
+        lastModifiedElement.textContent = lastModified;
+    }
 }
 
 // Call the functions to update the elements
