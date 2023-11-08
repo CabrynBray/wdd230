@@ -18,6 +18,16 @@ img {
     margin: 5px auto;
 }
 
+/* dark Mode */
+#mode {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
 /* Step 5 Display the navigation links vertically in a single column in the mobile view and horizontally in one row in the larger views.*/
 /* small view navigation */
 #menu {
@@ -91,16 +101,12 @@ img {
 main {
     max-width: 770px;
     margin: 0 auto;
-}
-
-main h2 {
-    color: #502F4C;
+    color: #502F4C
 }
 
 .card {
     padding: 10px;
     border: 1px solid #502F4C;
-    color: #502F4C;
 }
 
 /* Step 9 Set the style type of the course links list to none (do not display bullets). */

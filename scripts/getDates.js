@@ -30,3 +30,20 @@ hamButton.addEventListener('click', () => {
     navigation.classList.toggle('open');
     hamButton.classList.toggle('open');
 });
+
+/* dark Mode */
+const modeButton = document.querySelector("#mode");
+const main = document.querySelector("main");
+
+modeButton.addEventListener("click", () => {
+    if (modeButton.textContent.includes("🕶️")) {
+        main.style.background = "#502F4C";
+        main.style.color = "#F9F4F5";
+        modeButton.textContent = "🔆";
+    }
+    else {
+        main.style.background = "#F9F4F5"
+        main.style.color = "#502F4C";
+        modeButton.textContent = "🕶️";
+    }
+});
