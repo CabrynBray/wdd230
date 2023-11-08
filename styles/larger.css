@@ -1,12 +1,4 @@
 @media screen and (min-width: 500px) {
-    nav ul {
-        display: flex;
-        /* justify-content: space-evenly; */
-    }
-
-    nav ul li {
-        flex: 1 1 100%;
-    }
 
     main h2 {
         display: grid;
@@ -20,6 +12,24 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 40px 1fr;
         gap: 20px;
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    #menu {
+        display: none;
+        /* hide hamburger button */
+    }
+
+    .stuff {
+        margin: 1rem auto;
     }
 
 }

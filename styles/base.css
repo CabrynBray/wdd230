@@ -19,16 +19,39 @@ img {
 }
 
 /* Step 5 Display the navigation links vertically in a single column in the mobile view and horizontally in one row in the larger views.*/
-nav {
+/* small view navigation */
+#menu {
+    font-size: 1.5rem;
+    border: 1px solid #70587C;
+    padding: 3px 7px 6px;
+    background-color: #C8B8DB;
+    color: #70587C;
+    position: relative;
+
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
     background-color: #70587C;
-    margin: 0 auto;
+    color: white;
 }
 
-nav ul {
-    list-style-type: none;
+.navigation li {
+    /* list-style-type: none; */
+    display: none;
 }
 
-nav a {
+.navigation li a {
     display: block;
     color: white;
     text-align: center;
@@ -36,8 +59,31 @@ nav a {
     text-decoration: none;
 }
 
-nav a:hover {
+.navigation li a:hover {
     border: 2px solid #502F4C;
+}
+
+/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+.open li {
+    display: block;
+    width: 100%;
+}
+
+.open li a {
+    display: block;
+}
+
+.active::before {
+    content: "📍 ";
+}
+
+.stuff {
+    margin: .5m;
+    border: 1px solid rgba(0, 0, 0, .1);
+    background-color: #bed;
+    max-width: 580px;
+    height: 100vh;
+
 }
 
 /* step 6 The main element has a limited width and is centered on the screen horizontally.*/
