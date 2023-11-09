@@ -2,7 +2,6 @@
 
     main h2 {
         display: grid;
-        color: #502F4C;
         grid-row: 1;
         grid-column: 1/3;
     }

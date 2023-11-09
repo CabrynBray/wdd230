@@ -11,7 +11,7 @@ header {
     padding: 20px;
 }
 
-img {
+#profile-pic {
     padding: 5px;
     width: 40%;
     display: block;
@@ -26,6 +26,7 @@ img {
     font-size: 3rem;
     cursor: pointer;
     font-size: 2rem;
+    color: #C8B8DB;
 }
 
 /* Step 5 Display the navigation links vertically in a single column in the mobile view and horizontally in one row in the larger views.*/
@@ -33,6 +34,7 @@ img {
 #menu {
     font-size: 1.5rem;
     border: 1px solid #70587C;
+    /*  border left out of dark mode */
     padding: 3px 7px 6px;
     background-color: #C8B8DB;
     color: #70587C;
@@ -61,6 +63,7 @@ img {
     display: none;
 }
 
+/* both nav li and hover are left out of dark mode */
 .navigation li a {
     display: block;
     color: white;
@@ -88,7 +91,7 @@ img {
 }
 
 .stuff {
-    margin: .5m;
+    /* margin: .5m; */
     border: 1px solid rgba(0, 0, 0, .1);
     background-color: #bed;
     max-width: 580px;
@@ -104,10 +107,12 @@ main {
     color: #502F4C
 }
 
+/* card let out of dark mode */
 .card {
     padding: 10px;
     border: 1px solid #502F4C;
 }
+
 
 /* Step 9 Set the style type of the course links list to none (do not display bullets). */
 .card ul {
