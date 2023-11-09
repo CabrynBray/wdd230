@@ -111,12 +111,14 @@ main {
 .card {
     padding: 10px;
     border: 1px solid #502F4C;
+    list-style: none;
 }
-
 
 /* Step 9 Set the style type of the course links list to none (do not display bullets). */
 .card ul {
     list-style-type: none;
+    text-decoration: none;
+    color: #502F4C;
 }
 
 footer {
