@@ -14,6 +14,11 @@
         display: none;
     }
 
+    footer {
+        justify-content: center;
+        display: flex;
+    }
+
 }
 
 ;

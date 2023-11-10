@@ -14,10 +14,10 @@ header {
 }
 
 header img {
-    width: 80px;
+    width: 130px;
     margin: 0 30px;
     /* box-shadow: 0px 1px 20px 4px white; */
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 #mode {
@@ -101,14 +101,18 @@ footer {
     color: #F2E437;
     font-family: "Open Sans", sans-serif;
     font-size: 18px;
-    display: block;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
 }
 
 footer img {
     width: 80px;
-    margin: 0 30px;
+    margin: 0 20px;
     /* box-shadow: 0px 1px 20px 4px white; */
     border-radius: 10px;
+}
+
+.contact {
+    display: inline;
+    padding: 2px;
 }
