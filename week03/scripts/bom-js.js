@@ -4,17 +4,13 @@ const list = document.querySelector('#list');
 
 let chaptersArray = getChapterList() || [];
 
-chaptersArray.forEach(chapter => {
-    displayList(chapter);
-})
-
 button.addEventListener('click', () => {
     if (input.value != '') {
         // call displayList with the input.value argument
         displayList(input.value);
 
         // push the input.value into the chaptersArray,
-        chaptersArray.push(displayList);
+        chaptersArray.push(input.value);
 
         // update the localStorage with the new array by calling a function named setChapterList
         setChapterList();
@@ -24,9 +20,18 @@ button.addEventListener('click', () => {
         // set the focus back to the input.
         input.focus();
 
-
     }
 
+})
+
+// send the focus to the input element
+input.focus();
+
+// change the input value to nothing or the empty string to clean up the interface for the user
+input.value = '';
+
+chaptersArray.forEach(chapter => {
+    displayList(chapter);
 })
 
 function displayList(item) {
@@ -53,20 +58,14 @@ function displayList(item) {
         input.focus();
     })
 
-    // send the focus to the input element
-    input.focus();
-
-    // change the input value to nothing or the empty string to clean up the interface for the user
-    input.value = '';
-
 }
 
 function setChapterList() {
-    localStorage.setItem('myFavBOMList', JSON.stringify(chaptersArray));
+    localStorage.setItem('MyFavBoMList', JSON.stringify(chaptersArray));
 }
 
 function getChapterList() {
-    return JSON.parse(localStorage.getItem('myFavBOMList'));
+    return JSON.parse(localStorage.getItem('MyFavBoMList'));
 }
 
 function deleteChapter(chapter) {
