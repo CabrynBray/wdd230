@@ -1,4 +1,5 @@
 body {
+    margin: 0 auto;
     background-color: #F9F4F5;
 }
 
@@ -11,11 +12,15 @@ header {
     padding: 20px;
 }
 
+header h1 {
+    display: inline;
+}
+
 #profile-pic {
-    padding: 5px;
-    width: 40%;
-    display: block;
-    margin: 5px auto;
+    width: 80px;
+    height: auto;
+    margin: 0 30px;
+    border-radius: 10px;
 }
 
 /* dark Mode */
@@ -31,6 +36,7 @@ header {
 
 /* Step 5 Display the navigation links vertically in a single column in the mobile view and horizontally in one row in the larger views.*/
 /* small view navigation */
+
 #menu {
     font-size: 1.5rem;
     border: 1px solid #70587C;
@@ -38,8 +44,10 @@ header {
     padding: 3px 7px 6px;
     background-color: #C8B8DB;
     color: #70587C;
-    position: relative;
-
+    /* position: relative; */
+    position: absolute;
+    top: 5.6rem;
+    right: 1rem;
 }
 
 #menu::before {
@@ -104,7 +112,7 @@ header {
 main {
     max-width: 770px;
     margin: 0 auto;
-    color: #502F4C
+    color: #502F4C;
 }
 
 /* card let out of dark mode */
@@ -121,8 +129,57 @@ main {
     color: #502F4C;
 }
 
+section h3 {
+    background-color: #502F4C;
+    color: #C8B8DB;
+    padding: 10px;
+    margin-top: 0;
+}
+
 footer {
     text-align: center;
     background-color: #502F4C;
     color: #C8B8DB;
+}
+
+/* hero */
+.hero {
+    position: relative;
+    width: 960;
+    height: auto;
+}
+
+.herolabel {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: radial-gradient(#fff, #70587C);
+    border: 1px solid rgba(0, 0, 0, .75);
+    padding: 1.5rem;
+    box-shadow: 0 0 3rem #fff;
+    opacity: 0.75;
+}
+
+.herolabel p {
+    white-space: nowrap;
+    margin: 0;
+    text-align: center;
+    padding: .25rem;
+    font-weight: 700;
+    font-size: 2rem;
+    font-family: "Great Vibes", serif;
+    min-width: 165px;
+}
+
+main h2 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+/* iframe */
+iframe {
+    padding: 5px;
+    width: 600px;
+    height: auto;
 }

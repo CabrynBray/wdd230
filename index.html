@@ -39,35 +39,57 @@
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="chamber/index.html">Chamber</a></li>
             <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
-            <li><a href="w04-task.html">Form</a></li>
+            <li><a href="#">Form</a></li>
         </ul>
     </nav>
 
-    <main>
-        <h2>WDD 230: Web Frontend Development</h2>
-        <section class="card">
-            <h3>Learning Activities</h3>
-            <ul>
-                <li><a href="week01">Week 01 </a></li>
-                <li>Week 02:<a href="https://codepen.io/CabrynBray/pen/ExrZGvY?editors=0110">Resonsive Menu</a> |
-                    <a href="week02/design.html">Web Design Activity</a> |
-                    <a href="week02/bom.html">DOM Manipulation</a>
-                </li>
-                <li>Week 03:<a href="week03/images/landscape.webp">WebP</a>
-                    <a href="week03/lazyload.html">Lazy Loading</a>
-                    <a href="week03/responsive-images.html">Responsive Images</a>
-                    <a href="week03/bom.html">BOM</a>
-                </li>
-                <li><a href="">Week 04 </a></li>
-                <li><a href="">Week 05 </a></li>
-                <li><a href="">Week 06 </a></li>
-            </ul>
-        </section>
+    <div class="hero">
+        <picture>
+            <source srcset="images/hero-small.webp" media="(max-width: 400px)">
+            <source srcset="images/hero-medium.webp" media="(max-width: 800px)">
+            <img src="images/hero-large.webp" alt="Durban South Africa Temple" loading="lazy" width="960" height="600">
+        </picture>
+        <div class="herolabel">
+            <p>Durban SA Temple</p>
+        </div>
+    </div>
 
-        <section class="card">
-            <h3>Information</h3>
-            <p>Information placeholders about the weather, number of visits to the page, etc..</p>
-        </section>
+    <main>
+
+        <h2>WDD 230: Web Frontend Development</h2>
+        <hr>
+        <div class="section-grid">
+            <section class="card">
+                <h3>Learning Activities</h3>
+                <ul>
+                    <li><a href="week01">Week 01 </a></li>
+                    <li>Week 02:<a href="https://codepen.io/CabrynBray/pen/ExrZGvY?editors=0110">Resonsive Menu</a> |
+                        <a href="week02/design.html">Web Design Activity</a> |
+                        <a href="week02/bom.html">DOM Manipulation</a>
+                    </li>
+                    <li>Week 03:<a href="week03/images/landscape.webp">WebP</a>
+                        <a href="week03/lazyload.html">Lazy Loading</a>
+                        <a href="week03/responsive-images.html">Responsive Images</a>
+                        <a href="week03/bom.html">BOM</a>
+                    </li>
+                    <li><a href="">Week 04 </a></li>
+                    <li><a href="">Week 05 </a></li>
+                    <li><a href="">Week 06 </a></li>
+                </ul>
+            </section>
+
+            <section class="card">
+                <h3>Information</h3>
+                <p>Information placeholders about the weather, number of visits to the page, etc..</p>
+                <p><span>Number of Visits: </span><span class="num-visits"></span></p>
+            </section>
+        </div>
+
+        <hr>
+        <iframe title="Discovery, Roodepoort"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12045.478336445009!2d27.887920274422246!3d-26.159500081431204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95a03a2bb73d05%3A0xd808f1e1aeacd0a3!2sDiscovery%2C%20Roodepoort%2C%201709!5e0!3m2!1sen!2sza!4v1700135030560!5m2!1sen!2sza"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
 
     </main>
     <footer>
