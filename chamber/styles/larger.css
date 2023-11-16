@@ -24,9 +24,9 @@
         grid-template-columns: 1fr 3fr;
     }
     .container .sidebar {
-        padding: 20px;
-        width: 100px;
-        height: 200px;
+        padding: 10px;
+        width: 150px;
+        height: auto;
         background: pink;
         border-radius: 20px;
     }
