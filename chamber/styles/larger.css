@@ -18,4 +18,28 @@
         display: flex;
     }
 
+    /* Discover css */
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+    .container .sidebar {
+        padding: 20px;
+        width: 100px;
+        height: 200px;
+        background: pink;
+        border-radius: 20px;
+    }
+
+    .container .photos-container {
+        grid-column: 2/3;
+        margin: 0 auto;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    
+
 }
