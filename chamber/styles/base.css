@@ -91,6 +91,12 @@ nav a:hover {
     content: "📍 ";
 }
 
+/* Join Now */
+#join-now {
+    background-color: white;
+    color: #F2E437;
+    padding: 5px;
+}
 
 /* footer */
 footer {
