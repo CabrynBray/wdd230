@@ -121,9 +121,22 @@ footer img {
 }
 
 /* Discover css */
+.sidebar {
+    border: 2px solid #104210;
+    background: #6A8820;
+    text-align: center;
+}
+
+.calendar {
+    width: 100%;
+    height: auto;
+}
+
+.events .attractions .calendar .demographics .localStorage {
+    border: 2px solid #104210;
+}
+
 .label {
-    position: absolute;
-    transform: translateX(-50%);
     background: radial-gradient(#fff, #104210);
     border: 1px solid rgba(0, 0, 0, .75);
     padding: 1.5rem;
@@ -139,6 +152,11 @@ footer img {
     font-weight: 700;
     font-size: 2rem;
     min-width: 165px;
+}
+
+.photos-container img:hover {
+    transform: scale(1.1);
+    border: 2px solid #F2E437;
 }
 
 .photos-container img {

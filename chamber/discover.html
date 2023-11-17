@@ -21,7 +21,7 @@
     <link rel="icon" href="favicon.ico">
 
     <meta property="og:title" content="Cabryn Bray - WDD 230 - Web Frontend Development" />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content="website">
     <meta property="og:image"
         content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPoToEqA0gc54HsLS-1KHg6X3yx5iDozNcxSYnmIvfeLGVQcMgvXjQIdxB6fac4Qb5oJM&usqp=CAU" />
     <meta property="og:url" content="https://cabrynbray.github.io/wdd230/" />
@@ -49,45 +49,82 @@
 
     <main>
         <div class="container">
-        <div class="sidebar">
-            <p>Events: </p>
-            <p>Christmas Market 2-6 Dec</p>
-            <p>Movie Night 8 Dec</p>
-            <p>Hike 30 Nov</p>
-            <p>Pool Day 15 Dec</p>
-            <p>Theme park day TBD</p>
-            <p>Wildlife day TBD</p>
-            <hr>
-            <p>Attractions:</p>
-            <p>LOcal Pool</p>
-            <p>Hikeing trails</p>
-            <p>Christmas Vilage</p>
-            <hr>
-            <p>calendar</p>
-            
-            <hr>
-            <p>localStorage</p>
-        </div>
+            <div class="sidebar">
+                <section class="events">
+                    <h3>Events: </h3>
 
-        <div class="photos-container">
-            <picture class="photos">
-            <img src="images/photo1.webp" alt="Christmas Market" loading="lazy" width="400" height="600">
-            <img src="images/photo2.webp" alt="Theme Park" loading="lazy" width="400" height="600">
-            <img src="images/photo3.webp" alt="Swiming Pool" loading="lazy" width="400" height="600">
-            <img src="images/photo4.webp" alt="Wildlife" loading="lazy" width="400" height="600">
-            <img src="images/photo5.webp" alt="Movie Night" loading="lazy" width="400" height="600">
-            <img src="images/photo6.webp" alt="Hikeing Trails" loading="lazy" width="400" height="600">
-            </picture>
-
-            <div class="label">
-                <p>Christmas Market</p>
-                <p>Theme Park</p>
-                <p>Swiming Pool</p>
-                <p>Wildlife</p>
-                <p>Movie Night</p>
-                <p>Hikeing Trails</p>
+                    <p>Christmas Market 2-6 Dec</p>
+                    <p>Movie Night 8 Dec</p>
+                    <p>Hike 30 Nov</p>
+                    <p>Pool Day 15 Dec</p>
+                    <p>Theme park day TBD</p>
+                    <p>Wildlife day TBD</p>
+                </section>
+                <hr>
+                <section class="attractions">
+                    <h3>Attractions:</h3>
+                    <p>Local Pool</p>
+                    <p>Hikeing trails</p>
+                    <p>Christmas Vilage</p>
+                </section>
+                <hr>
+                <section class="calendar">
+                    <h3>Calendar:</h3>
+                    <picture>
+                        <img src="images/calendar.webp" alt="calendar" loading="lazy" width="130" height="93">
+                    </picture>
+                </section>
+                <hr>
+                <section class="demographics">
+                    <h3>Demographics:</h3>
+                    <p>Country - South Africa</p>
+                    <p>Province - Gauteng</p>
+                    <p>Municipality City of Johannesburg</p>
+                    <p>Area:</p>
+                    <p>• Total 161.50 km2 (62.36 sq mi)</p>
+                    <p>Population: </p>
+                    <p>• Total 326,416</p>
+                    <p>• Density 2,000/km2 (5,200/sq mi)</p>
+                </section>
+                <hr>
+                <section class="localStorage">
+                    <h3>Page Views:</h3>
+                    <p><span>Number of Visits: </span><span class="num-visits"></span></p>
+                </section>
             </div>
-        </div>
+
+            <div class="photos-container">
+                <picture class="photos">
+                    <img src="images/photo1.webp" alt="Christmas Market" loading="lazy" width="400" height="600">
+                </picture>
+                <h3 class="label">Christmas Market 2-6 Dec</h3>
+
+                <picture class="photos">
+                    <img src="images/photo2.webp" alt="Theme Park" loading="lazy" width="400" height="600">
+                </picture>
+                <h3 class="label">Theme park day TBD</h3>
+
+                <picture class="photos">
+                    <img src="images/photo3.webp" alt="Swiming Pool" loading="lazy" width="400" height="600">
+                </picture>
+                <h3 class="label">Pool Day 15 Dec</h3>
+
+                <picture class="photos">
+                    <img src="images/photo4.webp" alt="Wildlife" loading="lazy" width="400" height="600">
+                </picture>
+                <h3 class="label">Wildlife day TBD</h3>
+
+                <picture class="photos">
+                    <img src="images/photo5.webp" alt="Movie Night" loading="lazy" width="400" height="600">
+                </picture>
+                <h3 class="label">Movie Night 8 Dec</h3>
+
+                <picture class="photos">
+                    <img src="images/photo6.webp" alt="Hikeing Trails" loading="lazy" width="400" height="600">
+                </picture>
+                <h3 class="label">Hike 30 Nov</h3>
+
+            </div>
         </div>
     </main>
 
