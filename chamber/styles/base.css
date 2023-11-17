@@ -154,11 +154,6 @@ footer img {
     min-width: 165px;
 }
 
-.photos-container img:hover {
-    transform: scale(1.1);
-    border: 2px solid #F2E437;
-}
-
 .photos-container img {
     width: 100%;
     background: #000;
