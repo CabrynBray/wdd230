@@ -1,3 +1,7 @@
+body {
+    margin: 0 auto;
+}
+
 /* header and Nav and Mode */
 header {
     background-color: #104210;
