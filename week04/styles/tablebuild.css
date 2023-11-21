@@ -1,0 +1,42 @@
+:root {
+    --border: 1px solid grey;
+    --black: #000000;
+    --grey: #303030;
+    --white: #fff;
+    --zebra: lightgrey;
+}
+
+table {
+    border-collapse: collapse;
+    letter-spacing: 1px;
+}
+
+td {
+    border: var(--border);
+}
+
+tr:nth-child(even) {
+    background: var(--zebra);
+}
+
+th:nth-child(1) {
+    background: var(--black);
+}
+
+th {
+    background: var(--grey);
+    color: var(--white);
+}
+
+td,
+th {
+    padding: 10px 20px;
+    text-align: center;
+}
+
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    font-size: .85rem;
+}
