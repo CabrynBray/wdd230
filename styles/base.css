@@ -1,11 +1,17 @@
+:root {
+    --dark--purple: #502F4C;
+    --light--purple: #C8B8DB;
+    --border: 2px solid #502F4C;
+}
+
 body {
     margin: 0 auto;
     background-color: #F9F4F5;
 }
 
 header {
-    background-color: #502F4C;
-    color: #C8B8DB;
+    background-color: var(--dark--purple);
+    color: var(--light--purple);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,7 +37,7 @@ header h1 {
     font-size: 3rem;
     cursor: pointer;
     font-size: 2rem;
-    color: #C8B8DB;
+    color: var(--light--purple);
 }
 
 /* Step 5 Display the navigation links vertically in a single column in the mobile view and horizontally in one row in the larger views.*/
@@ -39,10 +45,10 @@ header h1 {
 
 #menu {
     font-size: 1.5rem;
-    border: 1px solid #70587C;
+    border: var(--border);
     /*  border left out of dark mode */
     padding: 3px 7px 6px;
-    background-color: #C8B8DB;
+    background-color: var(--light--purple);
     color: #70587C;
     /* position: relative; */
     position: absolute;
@@ -81,7 +87,7 @@ header h1 {
 }
 
 .navigation li a:hover {
-    border: 2px solid #502F4C;
+    border: var(--border);
 }
 
 /* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
@@ -112,13 +118,13 @@ header h1 {
 main {
     max-width: 770px;
     margin: 0 auto;
-    color: #502F4C;
+    color: var(--dark--purple);
 }
 
 /* card let out of dark mode */
 .card {
     padding: 10px;
-    border: 1px solid #502F4C;
+    border: var(--border);
     list-style: none;
 }
 
@@ -130,16 +136,16 @@ main {
 }
 
 section h3 {
-    background-color: #502F4C;
-    color: #C8B8DB;
+    background-color: var(--dark--purple);
+    color: var(--light--purple);
     padding: 10px;
     margin-top: 0;
 }
 
 footer {
     text-align: center;
-    background-color: #502F4C;
-    color: #C8B8DB;
+    background-color: var(--dark--purple);
+    color: var(--light--purple);
 }
 
 /* hero */
@@ -150,6 +156,7 @@ footer {
 .hero picture {
     width: 100%;
 }
+
 .hero img {
     width: 100%;
     height: auto;

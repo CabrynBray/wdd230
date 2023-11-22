@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabryn Bray - WDD 230 - Team Activity - Form</title>
+    <meta name="description" content="WDD 230 - W04: Team Activity - Form">
+    <meta name="author" content="Cabryn Bray">
+
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+    <link href="styles/form.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="mode">
+        ☆
+    </div>
+    <header>
+        <picture>
+            <img id="profile-pic" src="images/profile1.jpg" alt="Picture of Cabryn Bray">
+        </picture>
+        <h1>Cabryn Bray</h1>
+    </header>
+
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="form.html">Form</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <div id="formmessage"></div>
+
+        <form method="get" action="record.html">
+            <fieldset>
+                <legend>Join A Team - Form</legend>
+                <label class="top">Username* <input type="text" id="username" name="username" required></label>
+                <label class="top">Password* <input type="password" id="password" name="password" placeholder="A"
+                        required pattern="[a-zA-Z0-9]{8,}">
+                </label>
+                <label class="top">Re-enter Your Password* <input type="password" id="password2" name="password2"
+                        required></label>
+                <label class="top">Email* <input type="email" id="email" name="email" required placeholder="A"
+                        pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Rating</legend>
+                <label class="sbs">Page Rating
+                    <div id="rangevalue">0</div>
+                    <input type="range" id="rating" name="rating" min="0" max="10" value="0" step="1"
+                        list="rangevalues">
+                </label>
+                <datalist id="rangevalues">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+
+            </fieldset>
+
+            <input type="submit" value="Join Your Team Now" class="submitBtn">
+
+
+        </form>
+
+
+    </main>
+
+    <footer>
+        <p>&copy;<span id="copyright-year"></span> | Cabryn Bray | South Africa </p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+
+    <script src="scripts/form.js"></script>
+    <script src="scripts/getDates.js"></script>
+
+</body>
+
+</html>
