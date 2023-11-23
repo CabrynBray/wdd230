@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cabryn Bray - Chamber of Commerce</title>
+
+    <meta name="description" content="WDD 230 - Roodepoort Chamber of Commerce by Cabryn Bray">
+    <meta name="author" content="Cabryn Bray">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Lato:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:title" content="Cabryn Bray - WDD 230 - Web Frontend Development" />
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPoToEqA0gc54HsLS-1KHg6X3yx5iDozNcxSYnmIvfeLGVQcMgvXjQIdxB6fac4Qb5oJM&usqp=CAU" />
+    <meta property="og:url" content="https://cabrynbray.github.io/wdd230/" />
+</head>
+
+<body>
+    <header>
+        <div id="mode">
+            ☆
+        </div>
+
+        <img src="images/grow-sa-icon.jpg" alt="Grow SA icon">
+        <h1>Roodepoort Chamber of Commerce</h1>
+
+    </header>
+
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="chamber/index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="chamber/discover.html">Directory</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <form method="get" action="thankyou.html">
+
+            <fieldset>
+                <label class="top">First Name* <input type="text" id="fname" name="fname" required></label>
+                <label class="top">Last Name* <input type="text" id="lname" name="lname" required></label>
+                <label class="top">Title / Position<input type="text" id="title" name="title"
+                        pattern="[A-Za-z -]{7,}"></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com"
+                        required></label>
+                <label class="top">Mobile Phone Number <input type="tel" name="phone" id="phone" required></label>
+                <label class="top">Business / Organization's name <input type="text" id="bname" name="fname"
+                        required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Membership Level</legend>
+                <div>membership level</div>
+                <label class="sbs"><input type="radio" name="membership" value="nb"> NP Membership is for non profit
+                    organizations and there is no fee.</label>
+                <label class="sbs"><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
+                <label class="sbs"><input type="radio" name="membership" value="silver"> Silver Membership</label>
+                <label class="sbs"><input type="radio" name="membership" value="gold"> Gold Membership</label>
+            </fieldset>
+
+            <fieldset>
+                <label class="top"> Business / Organization's Description<input type="text" id="description"
+                        name="description"></label>
+            </fieldset>
+
+            <fieldset>
+                <label class="top"> Timestamp<input type="hidden" name="timestamp" id="timestamp"></label>
+            </fieldset>
+
+            <input type="submit" value="Propose My Course" class="submitBtn">
+
+        </form>
+
+
+
+
+    </main>
+
+    <footer>
+        <h4 class="contact">Contact info:</h4>
+        <p class="contact">Phone: 081 244 9053 | Email: CabrynBrayza@gmail.com</p>
+        <p><img src="images/grow-sa-icon.jpg" alt="Grow SA icon"> &copy;<span id="copyright-year"></span> |
+            Cabryn Bray
+            | South Africa | wdd 230</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+
+    <script src="scripts/getDates.js"></script>
+
+</body>
+
+</html>
