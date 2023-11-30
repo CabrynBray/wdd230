@@ -17,8 +17,16 @@
             "week": "Week 2",
             "links": [
                 {
-                    "url": "",
-                    "title": ""
+                    "url": "https://codepen.io/CabrynBray/pen/ExrZGvY?editors=0110",
+                    "title": "Resonsive Menu"
+                },
+                {
+                    "url": "week02/design.html",
+                    "title": "Web Design Activity"
+                },
+                {
+                    "url": "week02/bom.html",
+                    "title": "DOM Manipulation"
                 }
             ]
         },
@@ -26,8 +34,20 @@
             "week": "Week 3",
             "links": [
                 {
-                    "url": "",
-                    "title": ""
+                    "url": "week03/images/landscape.webp",
+                    "title": "WebP"
+                },
+                {
+                    "url": "week03/lazyload.html",
+                    "title": "Lazy Loading"
+                },
+                {
+                    "url": "week03/responsive-images.html",
+                    "title": "Responsive Images"
+                },
+                {
+                    "url": "week03/bom.html",
+                    "title": "BOM"
                 }
             ]
         },
@@ -35,8 +55,20 @@
             "week": "Week 4",
             "links": [
                 {
-                    "url": "",
-                    "title": ""
+                    "url": "https://codepen.io/CabrynBray/pen/yLZvGBQ?editors=0110",
+                    "title": "Pseudo-Classes"
+                },
+                {
+                    "url": "week04/images/combinators-w3schools.png",
+                    "title": "Combinators"
+                },
+                {
+                    "url": "week04/styles/tablebuild.css",
+                    "title": "Table"
+                },
+                {
+                    "url": "week04/index.html",
+                    "title": "Form"
                 }
             ]
         },
@@ -44,8 +76,20 @@
             "week": "Week 5",
             "links": [
                 {
-                    "url": "",
-                    "title": ""
+                    "url": "https://codepen.io/CabrynBray/pen/poGZeGV?editors=1100",
+                    "title": "Pseudo-elements"
+                },
+                {
+                    "url": "week05/new-ward-members.json",
+                    "title": "JSON"
+                },
+                {
+                    "url": "week05/prophets.html",
+                    "title": "Fetch API"
+                },
+                {
+                    "url": "week05/weather.html",
+                    "title": "Wether API"
                 }
             ]
         }
