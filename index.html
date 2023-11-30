@@ -60,36 +60,19 @@
         <hr>
         <div class="section-grid">
             <section class="card">
+
                 <h3>Learning Activities</h3>
-                <ul class="weeks">
-                    <li><a href="week01">Week 01 </a></li>
-                    <li>Week 02: <a href="https://codepen.io/CabrynBray/pen/ExrZGvY?editors=0110">Resonsive Menu</a> |
-                        <a href="week02/design.html">Web Design Activity</a> |
-                        <a href="week02/bom.html">DOM Manipulation</a>
-                    </li>
+                <ul id="activity-list"></ul>
 
-                    <li>Week 03: <a href="week03/images/landscape.webp">WebP</a> |
-                        <a href="week03/lazyload.html">Lazy Loading</a> |
-                        <a href="week03/responsive-images.html">Responsive Images</a> |
-                        <a href="week03/bom.html">BOM</a>
-                    </li>
-
-                    <li>Week 04: <a href="https://codepen.io/CabrynBray/pen/yLZvGBQ?editors=0110">Pseudo-Classes</a> |
-                        <a href="week04/images/combinators-w3schools.png">Combinators</a> |
-                        <a href="week04/styles/tablebuild.css">Table</a> | <a href="week04/index.html">Form</a>
-                    </li>
-
-                    <li>Week 05: <a href="https://codepen.io/CabrynBray/pen/poGZeGV?editors=1100">Pseudo-elements</a> |
-                        <a href="week05/new-ward-members.json">JSON</a> | <a href="week05/prophets.html">Fetch API</a> |
-                        <a href="week05/weather.html">Wether API</a>
-                    </li>
-                    <li><a href="">Week 06 </a></li>
-                </ul>
             </section>
 
             <section class="card">
                 <h3>Information</h3>
-                <p>Information placeholders about the weather, number of visits to the page, etc..</p>
+                <p>The current temperature in South Africa is <span id="current-temp"></span></p>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
                 <p><span>Number of Visits: </span><span class="num-visits"></span></p>
             </section>
         </div>
@@ -107,6 +90,8 @@
     </footer>
 
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/links.js"></script>
 </body>
 
 </html>

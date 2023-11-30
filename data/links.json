@@ -1,7 +1,7 @@
 {
     "weeks": [
         {
-            "week": "Week 1",
+            "week": "Week 1:",
             "links": [
                 {
                     "url": "week01/holygrail.html",
@@ -14,7 +14,7 @@
             ]
         },
         {
-            "week": "Week 2",
+            "week": "Week 2:",
             "links": [
                 {
                     "url": "https://codepen.io/CabrynBray/pen/ExrZGvY?editors=0110",
@@ -31,7 +31,7 @@
             ]
         },
         {
-            "week": "Week 3",
+            "week": "Week 3:",
             "links": [
                 {
                     "url": "week03/images/landscape.webp",
@@ -52,7 +52,7 @@
             ]
         },
         {
-            "week": "Week 4",
+            "week": "Week 4:",
             "links": [
                 {
                     "url": "https://codepen.io/CabrynBray/pen/yLZvGBQ?editors=0110",
@@ -73,7 +73,7 @@
             ]
         },
         {
-            "week": "Week 5",
+            "week": "Week 5:",
             "links": [
                 {
                     "url": "https://codepen.io/CabrynBray/pen/poGZeGV?editors=1100",
