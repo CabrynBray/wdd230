@@ -267,3 +267,61 @@ form input.submitBtn {
 }
 
 /* ------------------------------ Directory Page ---------------------------- */
+/* Center the Button */
+#directory-menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Grid View */
+.directory-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    justify-items: center;
+}
+
+.directory-cards section {
+    text-align: center;
+    border: 2px solid var(--color);
+    color: var(--color);
+    width: 350px;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+/* List View */
+.directory-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    justify-items: center;
+}
+
+.directory-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.directory-list section {
+    text-align: center;
+    border: 2px solid var(--color);
+    color: var(--color);
+    width: 350px;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.directory-list section img {
+    display: none;
+}
+
+.directory-list section:nth-child(odd) {
+    background-color: #6A8820;
+    color: black;
+}
+
+.directory-list section:nth-child(even) {
+    background-color: #F2E437;
+    color: black;
+}

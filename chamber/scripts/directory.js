@@ -1,19 +1,18 @@
 // Grid vs List
 const gridbutton = document.querySelector("#directory-grid");
 const listbutton = document.querySelector("#directory-list");
-const display = document.querySelector("article");
+const display = document.querySelector(".directory-cards");
 
 gridbutton.addEventListener("click", () => {
-    // example using arrow function
-    display.classList.add("grid");
-    display.classList.remove("list");
+    display.classList.add("directory-grid");
+    display.classList.remove("directory-list");
 });
 
-listbutton.addEventListener("click", showList); // example using defined function
+listbutton.addEventListener("click", showList);
 
 function showList() {
-    display.classList.add("list");
-    display.classList.remove("grid");
+    display.classList.add("directory-list");
+    display.classList.remove("directory-grid");
 }
 
 // members data
