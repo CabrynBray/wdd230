@@ -48,6 +48,12 @@
     </nav>
 
     <main>
+        <div id="banner">
+            <p>Join our Meet & Greet!</p>
+            <p>Wednesday at 7:00 p.m.</p>
+            <button id="close-banner"></button>
+        </div>
+
         <a href="join.html" id="join-now">Join Now</a>
         <section class="join">Join section still comming</section>
 
@@ -57,9 +63,55 @@
                 <a href="join.html" class="join">Join The Chamber</a>
             </div>
         </section>
-        <section class="current-events">Current Events section still comming</section>
-        <section class="weather-card">Weather Card section still comming</section>
-        <section class="spotlights">Spotlights section still comming</section>
+
+        <div class="section-grid">
+
+            <section class="current-events">Current Events section still comming</section>
+            <section class="weather-card">
+                <h2>Weather</h2>
+                <div class="weather">
+                    <h3>Current Temp in Roodepoort</h3>
+
+                    <figure>
+                        <img id="weather-icon" src="#" alt="#">
+                        <p><span id="current-temp"></span></p>
+                        <figcaption></figcaption>
+                    </figure>
+                </div>
+
+                <div id="forecast-card">
+                    <h4>Three Day Forecast</h4>
+
+                    <figure id="forecast">
+
+                        <p><span id="forecast-day1"></span></p>
+                        <figure>
+                            <img id="icon-day1" src="#" alt="#">
+                            <figcaption id="figcaption1"></figcaption>
+                        </figure>
+
+                        <p><span id="forecast-day2"></span></p>
+                        <figure>
+                            <img id="icon-day2" src="#" alt="#">
+                            <figcaption id="figcaption2"></figcaption>
+                        </figure>
+
+                        <p><span id="forecast-day3"></span></p>
+                        <figure>
+                            <img id="icon-day3" src="#" alt="#">
+                            <figcaption id="figcaption3"></figcaption>
+                        </figure>
+
+                    </figure>
+                </div>
+            </section>
+
+        </div>
+
+        <section class="spotlights">
+            <h2>----- Spotlights -----</h2>
+            <div class='directory-cards'></div>
+        </section>
     </main>
 
     <footer>
@@ -72,6 +124,9 @@
     </footer>
 
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/spotlight.js"></script>
+    <script src="scripts/banner.js"></script>
 
 </body>
 

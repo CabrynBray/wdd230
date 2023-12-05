@@ -1,5 +1,5 @@
 :root {
-    --border: 1px solid #104210;
+    --border: 3px solid #104210;
     --color: #104210;
     --fontsize: 1rem;
 }
@@ -7,6 +7,54 @@
 body {
     margin: 0 auto;
 }
+
+/* --------------------------- Banner --------------------- */
+
+#banner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    padding: 5rem 1rem 2rem 1rem;
+    width: 50%;
+    min-width: 300px;
+    max-width: 600px;
+    height: 20%;
+    background-color: var(--color);
+    opacity: 0.98;
+}
+
+#close-banner::before {
+    content: "❌";
+}
+
+#close-banner {
+    margin: 1rem;
+    border: none;
+    font-size: 3rem;
+    font-weight: bold;
+    background-color: var(--color);
+}
+
+#close-banner:hover {
+    cursor: pointer;
+}
+
+#banner p {
+    margin: .25rem 0;
+    border-radius: 10px;
+    padding: .5rem 1rem;
+    color: var(--color);
+    font-size: 1.5rem;
+    background-color: #D3C02F;
+    opacity: none;
+}
+
 
 /* header and Nav and Mode */
 header {
@@ -133,7 +181,55 @@ footer img {
     padding: 2px;
 }
 
-/* Discover css */
+/* --------------------------- Home / Main Page -------------------------------*/
+.weather-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.weather-card h2 {
+    padding: 1.5rem;
+    border-radius: 10px;
+    background-color: var(--color);
+    color: #F2E437;
+}
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+#current-temp {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+
+#forecast-card h4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--color);
+    color: #F2E437;
+    padding: .5rem;
+    border-radius: 8px;
+}
+
+#forecast {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+    font-size: 1.5rem;
+}
+
+
+
+/* -------------------------- Discover css ------------------------------- */
 .sidebar {
     border: 2px solid #104210;
     background: #6A8820;

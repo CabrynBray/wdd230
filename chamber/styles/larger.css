@@ -22,6 +22,14 @@
         display: flex;
     }
 
+    /* ---------------------------- Home / Main Page ------------------- */
+
+    .section-grid {
+        display: grid;
+        grid-template-columns: 1fr 300px;
+        grid-gap: 1.2rem;
+    }
+
     /* Discover css */
     .container {
         display: grid;
