@@ -54,11 +54,13 @@
             <button id="close-banner"></button>
         </div>
 
-        <a href="join.html" id="join-now">Join Now</a>
-        <section class="join">Join section still comming</section>
-
         <section class="hero">
-            <img src="images/roodepoort.jpeg" alt="Picture of Roodepoort">
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/hero-small.webp">
+                <source media="(max-width: 800px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-large.webp" alt="Picture of Roodepoort" width="960" height="600">
+            </picture>
+
             <div class="button-box">
                 <a href="join.html" class="join">Join The Chamber</a>
             </div>
