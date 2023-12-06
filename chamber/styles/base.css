@@ -210,7 +210,7 @@ footer img {
     padding: 1rem 2rem;
     font-size: 1.5rem;
     text-decoration: none;
-    color: #fff;
+    color: #F2E437;
     background-color: var(--color);
     /* Use the same color as the banner */
     border-radius: 10px;
@@ -219,7 +219,7 @@ footer img {
 
 .join:hover {
     background-color: #D3C02F;
-    /* Change to a contrasting color for better visibility */
+    color: var(--color);
 }
 
 /* weather and Upcoming Events */
