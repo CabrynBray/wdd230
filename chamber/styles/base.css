@@ -269,28 +269,22 @@ footer img {
     border: var(--border);
 }
 
-
-
 /* Spotlight */
-.spotlights {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1.2rem;
-}
-
 .spotlights h1 {
-    grid-column: span 3;
-    text-align: center;
     background-color: var(--color);
     color: #F2E437;
-    padding: 1rem;
     border-radius: 10px;
+    text-align: center;
+    padding: 1.5rem;
 }
 
-.spotlights section {
+.spotlight-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
-    border-radius: 10px;
 }
+
 
 
 /* -------------------------- Discover css ------------------------------- */

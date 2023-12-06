@@ -1,5 +1,5 @@
 const URL = "data/members.json";
-const directoryCards = document.querySelector('.directory-cards');
+const directoryCards = document.querySelector('.spotlight-cards');
 
 async function getCompanieSpotlightData() {
     try {
@@ -45,12 +45,11 @@ function shuffleArray(array) {
 }
 
 function createSpotlightCard(member) {
-    let card = document.createElement('section');
+    let card = document.createElement('div');
     let name = document.createElement('h3');
     let addresse = document.createElement('p');
     let phone = document.createElement('p');
     let img = document.createElement('img');
-    let website = document.createElement('a');
 
     name.textContent = `${member.name}`;
     addresse.textContent = `${member.addresse}`;
@@ -61,13 +60,10 @@ function createSpotlightCard(member) {
     img.setAttribute('width', '100');
     img.setAttribute('height', '100');
 
-    website.textContent = `${member.website}`;
-
     card.appendChild(name);
     card.appendChild(addresse);
     card.appendChild(phone);
     card.appendChild(img);
-    card.appendChild(website);
 
     return card;
 }
