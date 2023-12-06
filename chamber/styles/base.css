@@ -53,7 +53,6 @@ body {
     color: var(--color);
     font-size: 1.5rem;
     background-color: #D3C02F;
-    opacity: none;
 }
 
 
@@ -270,7 +269,7 @@ footer img {
 }
 
 /* Spotlight */
-.spotlights h1 {
+.spotlights h2 {
     background-color: var(--color);
     color: #F2E437;
     border-radius: 10px;
