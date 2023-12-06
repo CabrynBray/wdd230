@@ -27,6 +27,7 @@ body {
     height: 20%;
     background-color: var(--color);
     opacity: 0.98;
+    z-index: 1;
 }
 
 #close-banner::before {
@@ -56,7 +57,7 @@ body {
 }
 
 
-/* header and Nav and Mode */
+/* -------- header and Nav and Mode ----------*/
 header {
     background-color: #104210;
     color: #F2E437;
@@ -221,17 +222,25 @@ footer img {
     /* Change to a contrasting color for better visibility */
 }
 
-/* weather */
-.weather-card {
+/* weather and Upcoming Events */
+.weather-card,
+.current-events {
     display: flex;
     flex-direction: column;
 }
 
-.weather-card h2 {
+.weather-card h2,
+.current-events h2 {
     padding: 1.5rem;
     border-radius: 10px;
     background-color: var(--color);
     color: #F2E437;
+}
+
+.events {
+    padding-left: 20px;
+    background-color: #6A8820;
+    border: var(--border);
 }
 
 .weather {
@@ -240,6 +249,11 @@ footer img {
     justify-content: center;
     align-items: center;
     font-weight: bold;
+    background-color: #6A8820;
+}
+
+.weather h3 {
+    text-decoration: underline;
 }
 
 #current-temp {
@@ -247,26 +261,36 @@ footer img {
     font-weight: bold;
 }
 
-
-#forecast-card h4 {
+#weather-forecast {
+    background-color: #6A8820;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: space-around;
+    text-align: center;
+    border: var(--border);
+}
+
+
+
+/* Spotlight */
+.spotlights {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.2rem;
+}
+
+.spotlights h1 {
+    grid-column: span 3;
+    text-align: center;
     background-color: var(--color);
     color: #F2E437;
-    padding: .5rem;
-    border-radius: 8px;
+    padding: 1rem;
+    border-radius: 10px;
 }
 
-#forecast {
-    display: flex;
-    flex-direction: row;
+.spotlights section {
     text-align: center;
-    justify-content: space-around;
-    font-size: 1.5rem;
+    border-radius: 10px;
 }
-
 
 
 /* -------------------------- Discover css ------------------------------- */
@@ -413,7 +437,8 @@ form input.submitBtn {
 /* Grid View */
 .directory-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 1rem;
     justify-items: center;
 }
 

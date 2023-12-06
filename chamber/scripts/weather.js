@@ -33,28 +33,15 @@ apiFetch();
 
 // ---------------------- 3 Day Forecast ---------------------------
 
-const forecastDay1 = document.querySelector("#forecast-day1");
-const forecastDay2 = document.querySelector("#forecast-day2");
-const forecastDay3 = document.querySelector("#forecast-day3");
-
-const iconDay1 = document.querySelector("#icon-day1");
-const iconDay2 = document.querySelector("#icon-day2");
-const iconDay3 = document.querySelector("#icon-day3");
-
-const figcaption1 = document.querySelector('#figcaption1');
-const figcaption2 = document.querySelector('#figcaption2');
-const figcaption3 = document.querySelector('#figcaption3');
-
-const forecastIcon = document.querySelector('#forecast-icon');
-
+const weatherForecast = document.querySelector('#weather-forecast');
 const forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?lat=-26.12&lon=27.89&units=metric&appid=000316dee5050756ea86a2527d4effbb';
 
-async function getForecast() {
+async function forecastApiFetch() {
     try {
         const response = await fetch(forecastURL);
         if (response.ok) {
             const data = await response.json();
-            // console.log(data);
+            console.log(data);
             displayForecast(data)
         } else {
             throw Error(await response.text());
@@ -64,33 +51,52 @@ async function getForecast() {
     }
 }
 
+forecastApiFetch();
+
 function displayForecast(data) {
     const forecastList = data.list;
 
-    const day1 = forecastList[1];
-    const day2 = forecastList[2];
-    const day3 = forecastList[3];
+    const firstThreeDays = forecastList.slice(1, 4);
 
-    forecastDay1.innerHTML = `${getDayOfWeek(day1.dt_txt)} | Temp: ${day1.main.temp}&deg;C`;
-    iconDay1.setAttribute('src', `https://openweathermap.org/img/w/${day1.weather[0].icon}.png`);
-    iconDay1.setAttribute('alt', `png of ${day1.weather[0].description}`);
-    figcaption1.textContent = `${day1.weather[0].main}`;
-
-    forecastDay2.innerHTML = `${getDayOfWeek(day2.dt_txt)} | Temp: ${day2.main.temp}&deg;C`;
-    iconDay2.setAttribute('src', `https://openweathermap.org/img/w/${day2.weather[0].icon}.png`);
-    iconDay2.setAttribute('alt', `png of ${day2.weather[0].description}`);
-    figcaption2.textContent = `${day2.weather[0].main}`;
-
-    forecastDay3.innerHTML = `${getDayOfWeek(day3.dt_txt)} | Temp: ${day3.main.temp}&deg;C`;
-    iconDay3.setAttribute('src', `https://openweathermap.org/img/w/${day3.weather[0].icon}.png`);
-    iconDay3.setAttribute('alt', `png of ${day3.weather[0].description}`);
-    figcaption3.textContent = `${day3.weather[0].main}`;
+    firstThreeDays.forEach(day => {
+        const forecastCard = createForecastCard(day);
+        weatherForecast.appendChild(forecastCard);
+    });
 
 }
 
-function getDayOfWeek(dateString) {
-    const date = new Date(dateString + " UTC");
-    return new Intl.DateTimeFormat('en-US', { weekday: 'short' }).format(date);
+function createForecastCard(list) {
+    let card = document.createElement('div');
+    let dt = document.createElement('p');
+    let temp = document.createElement('p');
+    let img = document.createElement('img');
+    let desc = document.createElement('p');
+
+    // Convert timestamp to Date object
+    const date = new Date(list.dt * 1000); // Multiply by 1000 to convert seconds to milliseconds
+
+    // Get short day name
+    const shortDayName = getShortDayName(date.getDay());
+
+    dt.textContent = `${shortDayName}`;
+    temp.textContent = `${list.main.temp}`;
+    img.setAttribute("src", `https://openweathermap.org/img/w/${list.weather[0].icon}.png`);
+    img.setAttribute("alt", `${list.weather[0].description}`);
+    img.setAttribute('loading', 'lazy');
+    img.setAttribute('width', '50');
+    img.setAttribute('height', '50');
+    desc.textContent = `${list.weather[0].main}`;
+
+    card.appendChild(dt);
+    card.appendChild(temp);
+    card.appendChild(img);
+    card.appendChild(desc);
+
+    return card;
 }
 
-getForecast();
+function getShortDayName(dayNumber) {
+    const dayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    return dayNames[dayNumber];
+}
+

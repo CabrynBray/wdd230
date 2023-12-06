@@ -46,7 +46,7 @@ function shuffleArray(array) {
 
 function createSpotlightCard(member) {
     let card = document.createElement('section');
-    let name = document.createElement('h2');
+    let name = document.createElement('h3');
     let addresse = document.createElement('p');
     let phone = document.createElement('p');
     let img = document.createElement('img');
@@ -58,8 +58,8 @@ function createSpotlightCard(member) {
     img.setAttribute("src", member.image);
     img.setAttribute('alt', `${member.name} Company Logo`);
     img.setAttribute('loading', 'lazy');
-    img.setAttribute('width', '340');
-    img.setAttribute('height', '440');
+    img.setAttribute('width', '100');
+    img.setAttribute('height', '100');
 
     website.textContent = `${member.website}`;
 

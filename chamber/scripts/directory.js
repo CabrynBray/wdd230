@@ -50,8 +50,8 @@ function displayCompanieCards(members) {
         img.setAttribute("src", member.image);
         img.setAttribute('alt', `${member.name} Company Logo`);
         img.setAttribute('loading', 'lazy');
-        img.setAttribute('width', '340');
-        img.setAttribute('height', '440');
+        img.setAttribute('width', '270');
+        img.setAttribute('height', '380');
 
         website.textContent = `${member.website}`;
 
