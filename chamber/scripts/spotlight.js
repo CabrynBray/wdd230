@@ -6,7 +6,7 @@ async function getCompanieSpotlightData() {
         const response = await fetch(URL);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
+            // console.log(data);
             displayCompanieSpotlight(data.members);
 
         } else {
