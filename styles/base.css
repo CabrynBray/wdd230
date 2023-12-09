@@ -90,6 +90,11 @@ header h1 {
     border: var(--border);
 }
 
+.navigation li a:active {
+    background-color: #502F4C;
+    color: #C8B8DB;
+}
+
 /* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
 .open li {
     display: block;
@@ -100,9 +105,12 @@ header h1 {
     display: block;
 }
 
+/*
 .active::before {
     content: "📍 ";
 }
+*/
+
 
 .stuff {
     /* margin: .5m; */
@@ -149,17 +157,18 @@ footer {
 }
 
 /* ------------------------ hero -------------------------- */
+/* hero */
 .hero {
     position: relative;
+    overflow: hidden;
+    height: 60vh;
+    /* Adjust the height as needed */
 }
 
 .hero picture {
     width: 100%;
-}
-
-.hero img {
-    width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
 }
 
 .herolabel {
