@@ -41,7 +41,7 @@ async function forecastApiFetch() {
         const response = await fetch(forecastURL);
         if (response.ok) {
             const data = await response.json();
-            // console.log(data);
+            console.log(data);
             displayForecast(data)
         } else {
             throw Error(await response.text());
@@ -56,10 +56,10 @@ forecastApiFetch();
 function displayForecast(data) {
     const forecastList = data.list;
 
-    const firstThreeDays = forecastList.slice(1, 4);
+    const firstThreeDays = [7, 15, 23];
 
-    firstThreeDays.forEach(day => {
-        const forecastCard = createForecastCard(day);
+    firstThreeDays.forEach(index => {
+        const forecastCard = createForecastCard(forecastList[index]);
         weatherForecast.appendChild(forecastCard);
     });
 
