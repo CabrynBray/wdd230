@@ -109,23 +109,23 @@ numVisits++;
 // 5️⃣ store the new visit total into localStorage, key=numVisits-ls
 localStorage.setItem("number-of-visits", numVisits);
 
-// last visit 
+
+// ---------------- last visit -------------------------------
 const lastVisitDate = localStorage.getItem("lastVisitDate");
 
-if (lastVisitDate !== 0) {
+if (!lastVisitDate) {
     document.querySelector(".last-visits").textContent = "Welcome! Let us know if you have any questions.";
 } else {
     const currentDate = Date.now();
-    const daysPassed = Math.floor((currentDate - lastVisitDate) / (1000 * 60 * 60 * 24));
+    const daysPassed = Math.floor((currentDate - parseInt(lastVisitDate)) / (1000 * 60 * 60 * 24));
 
-    if (daysPassed < 1) {
-        document.querySelector(".last-visits").textContent = "Back so soon! Awesome!";
-    } else {
+    if (daysPassed >= 1) {
         const wording = daysPassed === 1 ? "day" : "days";
-        document.querySelector(".last-visits").textContent = `You last visited ${daysPassed} ${wording} ago.`
+        document.querySelector(".last-visits").textContent = `You last visited ${daysPassed} ${wording} ago.`;
+    } else {
+        document.querySelector(".last-visits").textContent = "Back so soon! Awesome!";
     }
 }
 
-localStorage.setItem("lastVisitDate", Date.now());
-
+localStorage.setItem("lastVisitDate", Date.now().toString());
 
